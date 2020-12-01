@@ -1,6 +1,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('crates', {
+      // I don't know if we'll need to change anything here
       id: {
         allowNull: false,
         autoIncrement: true,
