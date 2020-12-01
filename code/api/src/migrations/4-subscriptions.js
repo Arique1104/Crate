@@ -24,6 +24,11 @@ module.exports = {
         },
         allowNull: false
       },
+      // Something like this
+      
+      // crateStyle: {
+      //   type: Sequelize.STRING
+      // },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
