@@ -1,6 +1,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('users', {
+      // All of this is the what the migrations look like, it seems
       id: {
         allowNull: false,
         autoIncrement: true,
