@@ -77,6 +77,13 @@ export const productUpdate = {
       type: GraphQLInt
     },
 
+    //We'll likely have something like this here too
+
+    // style: {
+    //   name: 'style',
+    //   type: GraphQLString
+    // },
+
     gender: {
       name: 'gender',
       type: GraphQLInt
