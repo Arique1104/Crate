@@ -43,3 +43,11 @@ export const productTypes = {
   type: new GraphQLList(ProductTypesType),
   resolve: getTypes
 }
+
+// Something like this maybe too?
+
+// Product Styles
+// export const productStyles = {
+//   type: new GraphQLList(ProductStylesStyle),
+//   resolve: getTypes
+// }
