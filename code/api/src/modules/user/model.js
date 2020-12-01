@@ -15,6 +15,13 @@ module.exports = function(sequelize, DataTypes) {
     role: {
       type: DataTypes.TEXT
     }
+    // Maybe we add something like this to this table:
+
+    // personal_style: {
+    //   type: DataTypes.STRING
+    // }
+
+    // But somehow make it so that when the user first signs up, or just hasn't taken the quiz, that this by default will read "Undetermined, please take our style quiz!", with a link to the quiz.
   })
 
   User.associate = function(models) {
