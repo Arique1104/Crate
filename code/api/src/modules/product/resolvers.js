@@ -50,6 +50,8 @@ export async function create(parentValue, { name, slug, description, type, gende
       slug,
       description,
       type,
+      // likely add the next line:
+      // style,
       gender,
       image
     })
@@ -67,6 +69,8 @@ export async function update(parentValue, { id, name, slug, description, type, g
         slug,
         description,
         type,
+        // likely add the next line:
+        // style,
         gender,
         image
       },
