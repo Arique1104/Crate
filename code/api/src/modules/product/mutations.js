@@ -28,6 +28,12 @@ export const productCreate = {
       name: 'type',
       type: GraphQLInt
     },
+    //We'll likely have something like this here too
+
+    // style: {
+    //   name: 'style',
+    //   type: GraphQLString
+    // },
 
     gender: {
       name: 'gender',
