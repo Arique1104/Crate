@@ -1,6 +1,8 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('products', {
+      //  yeah, all of this is what the migrations are.  We will likely have to add a column here for 'style'
+      // It will probably look like what I've got below, commented out
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -19,6 +21,9 @@ module.exports = {
       type: {
         type: Sequelize.INTEGER
       },
+      // style: {
+      //   style: Sequelize.STRING
+      // },
       gender: {
         type: Sequelize.INTEGER
       },
