@@ -3,6 +3,7 @@
 // Product
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('products', {
+    // We will likely have to change this too
     name: {
       type: DataTypes.STRING
     },
@@ -15,6 +16,9 @@ module.exports = function(sequelize, DataTypes) {
     type: {
       type: DataTypes.INTEGER
     },
+    // style: {
+    //   type: DataTypes.STRING
+    // },
     gender: {
       type: DataTypes.INTEGER
     },
