@@ -9,6 +9,10 @@ module.exports = function(sequelize, DataTypes) {
     crateId: {
       type: DataTypes.INTEGER
     }
+    // And maybe something like this:
+
+    // crate_style: { type: GraphQLString },
+
   })
 
   Subscription.associate = function(models) {
