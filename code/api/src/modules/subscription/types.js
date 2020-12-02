@@ -15,7 +15,8 @@ const SubscriptionType = new GraphQLObjectType({
     user: { type: UserType },
     crate: { type: CrateType },
     // something like this?
-    // crate_style: { type: CrateStyleType },
+    // top_crate_style: { type: StyleType },
+    // second_crate_style: { type: StyleType },
     createdAt: { type: GraphQLString },
     updatedAt: { type: GraphQLString }
   })
