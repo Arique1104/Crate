@@ -11,7 +11,10 @@ module.exports = function(sequelize, DataTypes) {
     }
     // And maybe something like this:
 
-    // crateStyle: {
+    // topCrateStyle: {
+    //   type: DataTypes.INTEGER
+    // }
+    // secondCrateStyle: {
     //   type: DataTypes.INTEGER
     // }
 
