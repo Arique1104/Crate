@@ -23,10 +23,13 @@ module.exports = {
         },
         allowNull: false
       },
-      // Something like this
+      // Something like this:
 
-      // crateStyle: {
-      //   type: Sequelize.STRING
+      // topCrateStyle: {
+      //   type: Sequelize.INTEGER
+      // },
+      // secondCrateStyle: {
+      //   type: Sequelize.INTEGER
       // },
       createdAt: {
         allowNull: false,
