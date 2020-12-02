@@ -11,7 +11,9 @@ module.exports = function(sequelize, DataTypes) {
     }
     // And maybe something like this:
 
-    // crate_style: { type: GraphQLString },
+    // crateStyle: {
+    //   type: DataTypes.INTEGER
+    // }
 
   })
 
