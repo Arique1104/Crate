@@ -1,7 +1,6 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('subscriptions', {
-      // And I don't think we'll need to change anything here
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -25,7 +24,7 @@ module.exports = {
         allowNull: false
       },
       // Something like this
-      
+
       // crateStyle: {
       //   type: Sequelize.STRING
       // },
