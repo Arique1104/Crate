@@ -17,7 +17,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER
     },
     // style: {
-    //   type: DataTypes.STRING
+    //   type: DataTypes.INTEGER
     // },
     gender: {
       type: DataTypes.INTEGER
