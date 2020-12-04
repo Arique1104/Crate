@@ -30,6 +30,7 @@ module.exports = {
         slug: 'watch-for-women',
         description: 'A very nice watch for women.',
         type: params.product.types.accessory.id,
+        //styleType: 1,
         gender: params.user.gender.female.id,
         image: '/images/stock/watch-female.jpg',
         createdAt: new Date(),
