@@ -92,3 +92,5 @@ module.exports = {
     return queryInterface.bulkDelete('products', null, {});
   }
 }
+
+// We need to add many more seeds for the survey page, as well as update these seeds to include style types.
