@@ -21,7 +21,7 @@ const subscriptionsInitialState = {
   error: null,
   list: []
 }
-
+///action for fulling the styles for the survey will be an argument in the reducer 
 // State
 export const subscriptions = (state = subscriptionsInitialState, action) => {
   switch (action.type) {

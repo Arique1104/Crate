@@ -17,7 +17,7 @@ export const SUBSCRIPTIONS_GET_RESPONSE = 'SUBSCRIPTIONS/GET_RESPONSE'
 export const SUBSCRIPTIONS_GET_FAILURE = 'SUBSCRIPTIONS/GET_FAILURE'
 
 // Actions
-
+  //slap in an action 
 // Get list of subscriptions
 export function getList(isLoading = true) {
   return dispatch => {
