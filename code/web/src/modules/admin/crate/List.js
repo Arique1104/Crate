@@ -22,6 +22,10 @@ import admin from '../../../setup/routes/admin'
 // Component
 class List extends PureComponent {
 
+  // PureComponents are less commonly seen but can be helpful for performance boost 
+    // PureComponent automatically implements the shouldComponentUpdate() lifecycle method.
+      // shouldComponentUpdate is a checkpoint - checks to see if state change affected child
+      // prevent unnecessary re-render when parent component re-render triggers (state change)
   // Runs on server only for SSR
   static fetchData({ store }) {
     return store.dispatch(getCrateList('DESC'))
