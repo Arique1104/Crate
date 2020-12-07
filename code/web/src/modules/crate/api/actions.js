@@ -15,7 +15,7 @@ export const CRATES_GET_FAILURE = 'CRATES/GET_FAILURE'
 
 // Actions
 
-// Get list of crates
+// Get list of crates - triggered by List when user navigates to /crates route
 export function getList(orderBy = 'DESC', isLoading = true) {
   return dispatch => {
     dispatch({
