@@ -13,7 +13,7 @@ export const SET_USER = 'AUTH/SET_USER'
 export const LOGOUT = 'AUTH/LOGOUT'
 
 // Actions
-
+  //Will need a new action that sets the user's style summary
 // Set a user after login or using localStorage token
 export function setUser(token, user) {
   if (token) {
