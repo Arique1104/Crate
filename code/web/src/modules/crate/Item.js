@@ -28,7 +28,9 @@ class Item extends PureComponent {
       isLoading: false
     }
   }
-  // need change in logic for onClickSubscribe - if it's a user's first time clicking on any crate's subscribe button, they should be directed to the StyleSelectionForm
+  // need change in logic for onClickSubscribe 
+    // if it's a user's first time clicking on any crate's subscribe button, they should be directed to the StyleSelectionForm
+    // else trigger existing functionality to subscribe user to that crate
   onClickSubscribe = (crateId) => {
     this.setState({
       isLoading: true
