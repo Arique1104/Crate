@@ -25,12 +25,12 @@ module.exports = function(sequelize, DataTypes) {
     description: {
       type: DataTypes.TEXT
     },
+    // styleType {
+      // type: DataTypes.INTEGER
+      // },
     type: {
       type: DataTypes.INTEGER
     },
-    // styleType {
-    // type: DataTypes.INTEGER
-    // },
     gender: {
       type: DataTypes.INTEGER
     },
