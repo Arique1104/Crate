@@ -1,3 +1,4 @@
+// I made anotations here.
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('subscriptions', {

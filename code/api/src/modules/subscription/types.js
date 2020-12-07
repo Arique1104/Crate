@@ -1,3 +1,4 @@
+// I made anotations here.
 // Imports
 import { GraphQLObjectType, GraphQLString, GraphQLInt } from 'graphql'
 

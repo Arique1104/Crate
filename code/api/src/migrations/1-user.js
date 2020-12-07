@@ -1,3 +1,4 @@
+// I made anotations here.
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('users', {
@@ -33,6 +34,7 @@ module.exports = {
     return queryInterface.dropTable('users');
   }
 }
+
 //This document is setting the user and giving the database all it's desired attributes.
 
 // it has:
