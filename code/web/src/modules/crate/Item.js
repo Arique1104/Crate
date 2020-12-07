@@ -31,6 +31,7 @@ class Item extends PureComponent {
   // need change in logic for onClickSubscribe 
     // if it's a user's first time clicking on any crate's subscribe button, they should be directed to the StyleSelectionForm
     // else trigger existing functionality to subscribe user to that crate
+    // add another condition - check if user completed survey or not - might need to refactor logic here?
   onClickSubscribe = (crateId) => {
     this.setState({
       isLoading: true
@@ -44,7 +45,6 @@ class Item extends PureComponent {
           this.props.messageShow(response.data.errors[0].message)
         } else {
           this.props.messageShow('Subscribed successfully.')
-
           this.props.history.push(userRoutes.subscriptions.path)
         }
       })
