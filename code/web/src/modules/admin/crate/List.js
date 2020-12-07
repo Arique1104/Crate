@@ -26,6 +26,9 @@ class List extends PureComponent {
     // PureComponent automatically implements the shouldComponentUpdate() lifecycle method.
       // shouldComponentUpdate is a checkpoint - checks to see if state change affected child
       // prevent unnecessary re-render when parent component re-render triggers (state change)
+
+  // List component receives list of crates from the store - what's difference between SSR / CSR handling? 
+
   // Runs on server only for SSR
   static fetchData({ store }) {
     return store.dispatch(getCrateList('DESC'))
