@@ -1,3 +1,5 @@
+// You have to add
+
 // App Imports
 import params from '../../config/params'
 import models from '../../setup/models'
@@ -50,6 +52,7 @@ export async function create(parentValue, { name, slug, description, type, gende
       slug,
       description,
       type,
+      // styleType,
       gender,
       image
     })
@@ -67,6 +70,7 @@ export async function update(parentValue, { id, name, slug, description, type, g
         slug,
         description,
         type,
+        // styleType,
         gender,
         image
       },
