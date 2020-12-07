@@ -28,3 +28,5 @@ export default {
     auth: true
   }
 }
+
+// additional route object for user style preference survey
