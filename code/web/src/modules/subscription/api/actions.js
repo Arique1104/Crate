@@ -17,7 +17,7 @@ export const SUBSCRIPTIONS_GET_RESPONSE = 'SUBSCRIPTIONS/GET_RESPONSE'
 export const SUBSCRIPTIONS_GET_FAILURE = 'SUBSCRIPTIONS/GET_FAILURE'
 
 // Actions
-
+  //Action (thunk) to get styles from backend will be added
 // Get list of subscriptions
 export function getList(isLoading = true) {
   return dispatch => {
