@@ -17,7 +17,7 @@ import userRoutes from '../../setup/routes/user'
 import { messageShow, messageHide } from '../common/api/actions'
 import { create } from '../subscription/api/actions'
 
-// Component
+// Component for each List item - holds Subscribe button that triggers addition to store.subscriptionsByUser
 class Item extends PureComponent {
 
   constructor(props) {
