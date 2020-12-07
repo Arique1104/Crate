@@ -62,6 +62,7 @@ class Item extends PureComponent {
     }
   }
 
+  // route for style survey will be in this element
   render() {
     const { id, crate, createdAt } = this.props.subscription
     const { isLoading } = this.state
