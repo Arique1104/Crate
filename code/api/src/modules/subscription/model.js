@@ -6,6 +6,12 @@ module.exports = function(sequelize, DataTypes) {
     userId: {
       type: DataTypes.INTEGER
     },
+    // primaryUserStyle: {
+    // type: DataTypes.INTEGER
+    // },
+    // secondaryUserStyle: {
+    // type: DataTypes.INTEGER
+    // },
     crateId: {
       type: DataTypes.INTEGER
     }
