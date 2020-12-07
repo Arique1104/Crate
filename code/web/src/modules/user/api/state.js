@@ -11,6 +11,7 @@ export const userInitialState = {
 }
 
 // State
+// Action for setting user style summary will be added to reducer
 export default (state = userInitialState, action) => {
   switch (action.type) {
     case SET_USER:
