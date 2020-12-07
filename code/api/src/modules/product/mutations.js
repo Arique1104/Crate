@@ -74,15 +74,15 @@ export const productUpdate = {
       type: GraphQLString
     },
 
+    // styleType: {
+      // name: 'styleType',
+      // type: GraphQLString
+      // },
     type: {
       name: 'type',
       type: GraphQLInt
     },
 
-  // styleType: {
-  // name: 'styleType',
-  // type: GraphQLString
-  // },
 
     gender: {
       name: 'gender',
