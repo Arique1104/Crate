@@ -16,6 +16,7 @@ export const CRATES_GET_FAILURE = 'CRATES/GET_FAILURE'
 // Actions
 
 // Get list of crates - triggered by List when user navigates to /crates route
+  // on successful API call - list of crates from API is added to the store
 export function getList(orderBy = 'DESC', isLoading = true) {
   return dispatch => {
     dispatch({
