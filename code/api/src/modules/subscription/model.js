@@ -9,15 +9,6 @@ module.exports = function(sequelize, DataTypes) {
     crateId: {
       type: DataTypes.INTEGER
     }
-    // And maybe something like this:
-
-    // topCrateStyle: {
-    //   type: DataTypes.INTEGER
-    // }
-    // secondCrateStyle: {
-    //   type: DataTypes.INTEGER
-    // }
-
   })
 
   Subscription.associate = function(models) {

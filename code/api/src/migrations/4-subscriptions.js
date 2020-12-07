@@ -23,14 +23,6 @@ module.exports = {
         },
         allowNull: false
       },
-      // Something like this:
-
-      // topCrateStyle: {
-      //   type: Sequelize.INTEGER
-      // },
-      // secondCrateStyle: {
-      //   type: Sequelize.INTEGER
-      // },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
