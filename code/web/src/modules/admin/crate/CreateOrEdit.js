@@ -42,6 +42,8 @@ class CreateOrEdit extends Component {
     }
   }
 
+  // newer pattern - loading is UI / part of local state not global store state - delegate to component that cares about it; keep redux store as simple as you can 
+
   componentDidMount() {
     // Get crate details (edit case)
     this.getCrate(parseInt(this.props.match.params.id))
