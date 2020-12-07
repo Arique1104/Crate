@@ -1,3 +1,5 @@
+// Adds style type to seeds.
+
 'use strict';
 
 const params = require('../config/params');
@@ -10,6 +12,7 @@ module.exports = {
         slug: 'belt-for-women',
         description: 'A very nice belt for women.',
         type: params.product.types.accessory.id,
+        // styleType: 1,
         gender: params.user.gender.female.id,
         image: '/images/stock/belt-female.jpg',
         createdAt: new Date(),
@@ -20,6 +23,7 @@ module.exports = {
         slug: 'belt-for-men',
         description: 'A very nice belt for men.',
         type: params.product.types.accessory.id,
+        // styleType: 1,
         gender: params.user.gender.male.id,
         image: '/images/stock/belt-male.jpg',
         createdAt: new Date(),
@@ -41,6 +45,7 @@ module.exports = {
         slug: 'watch-for-men',
         description: 'A very nice watch for men.',
         type: params.product.types.accessory.id,
+        // styleType: 1,
         gender: params.user.gender.male.id,
         image: '/images/stock/watch-male.jpg',
         createdAt: new Date(),
@@ -51,6 +56,7 @@ module.exports = {
         slug: 't-shirt-for-women-black',
         description: 'A very nice black t-shirt for women.',
         type: params.product.types.cloth.id,
+        // styleType: 1,
         gender: params.user.gender.female.id,
         image: '/images/stock/t-shirt-female-1.jpg',
         createdAt: new Date(),
@@ -61,6 +67,7 @@ module.exports = {
         slug: 't-shirt-for-women-grey',
         description: 'A very nice grey t-shirt for women.',
         type: params.product.types.cloth.id,
+        // styleType: 1,
         gender: params.user.gender.female.id,
         image: '/images/stock/t-shirt-female-2.jpg',
         createdAt: new Date(),
@@ -71,6 +78,7 @@ module.exports = {
         slug: 't-shirt-for-men-white',
         description: 'A very nice white t-shirt for men.',
         type: params.product.types.cloth.id,
+        // styleType: 1,
         gender: params.user.gender.male.id,
         image: '/images/stock/t-shirt-male-1.jpg',
         createdAt: new Date(),
@@ -81,6 +89,7 @@ module.exports = {
         slug: 't-shirt-for-men-grey',
         description: 'A very nice grey t-shirt for men.',
         type: params.product.types.cloth.id,
+        // styleType: 1,
         gender: params.user.gender.male.id,
         image: '/images/stock/t-shirt-male-2.jpg',
         createdAt: new Date(),
