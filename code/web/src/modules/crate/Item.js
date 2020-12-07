@@ -18,7 +18,7 @@ import { messageShow, messageHide } from '../common/api/actions'
 import { create } from '../subscription/api/actions'
 
 // Component for each List item - holds Subscribe button that triggers addition to store.subscriptionsByUser
-// Item should also 
+// Item is imported as CrateItem in List
 class Item extends PureComponent {
 
   constructor(props) {
@@ -28,7 +28,7 @@ class Item extends PureComponent {
       isLoading: false
     }
   }
-
+  // need change in logic for onClickSubscribe - if it's a user's first time clicking on any crate's subscribe button, they should be directed to the StyleSelectionForm
   onClickSubscribe = (crateId) => {
     this.setState({
       isLoading: true
