@@ -44,15 +44,14 @@ export const productTypes = {
   type: new GraphQLList(ProductTypesType),
   resolve: getTypes
 }
-
 // All Product StyleTypes
 // export const styleTypes = {
-//   type: new GraphQLList(ProductStyleTypesType),
-//   resolve: getAllStyleTypes
-// }
+  //   type: new GraphQLList(ProductStyleTypesType),
+  //   resolve: getAllStyleTypes
+  // }
 
-// One Product StyleType
-// export const styleTypes - {
-//  type: new GraphQLList(ProductStyleTypeType),
-//  resolve: getStyleType
-// }
+  // One Product StyleType
+  // export const styleTypes - {
+    //  type: new GraphQLList(ProductStyleTypeType),
+    //  resolve: getStyleType
+    // }

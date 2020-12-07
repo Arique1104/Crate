@@ -1,5 +1,5 @@
-// I made anotations here.
 // we'll have to add the styleType attributes into these mutations so that it is available as an attribute that can be edited after creation.
+// I made anotations here.
 
 // Imports
 import { GraphQLString, GraphQLInt } from 'graphql'
