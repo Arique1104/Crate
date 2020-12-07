@@ -23,6 +23,7 @@ const subscriptionsInitialState = {
 }
 
 // State
+// Action for getting style survey styles will be added as argument for reducer
 export const subscriptions = (state = subscriptionsInitialState, action) => {
   switch (action.type) {
     case SUBSCRIPTIONS_GET_LIST_REQUEST:
