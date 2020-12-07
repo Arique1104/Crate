@@ -36,6 +36,6 @@ module.exports = function(sequelize, DataTypes) {
 // getRelated
 // getTypes
 
-// we will be adding a getStyle within the query and resolvers.
+// we will be adding a getAllStyleTypes and getStyleType within the query and resolvers.
 
 // This model holds a name as string, slug as string, description as text, type as integer, styleType as integer we will add, gender as an integer, image as text.
