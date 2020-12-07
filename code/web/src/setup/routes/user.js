@@ -5,6 +5,9 @@ import Profile from '../../modules/user/Profile'
 import Subscriptions from '../../modules/user/Subscriptions'
 
 // User routes
+  //SOMEWHERE IN HERE i believe will go a user route that is the style survey.
+  //believe that we agreed to have that business linked to the user as it will
+  //be different across all users 
 export default {
   login: {
     path: '/user/login',
