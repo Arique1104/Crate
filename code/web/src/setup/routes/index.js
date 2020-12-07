@@ -7,6 +7,7 @@ import product from './product'
 import crate from './crate'
 
 // Combined routes
+// The imports cover the additional routes we will create
 export const routes = Object.assign(admin, home, user, product, crate)
 
 // API Routes
