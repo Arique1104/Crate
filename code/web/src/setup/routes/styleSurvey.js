@@ -2,7 +2,7 @@
 
 export default {
   styleSurvey: {
-    path: '/user/styleSurvey',
+    path: '/styleSurvey',
     component: StyleSurvey,
   }
 }
