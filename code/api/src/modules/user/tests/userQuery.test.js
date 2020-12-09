@@ -25,5 +25,21 @@ describe('test the truth', () => {
     done();
   })
 
-  
+  it('returns a user based on id and only has style info', async(done) => {
+    const response = await request(server)
+      .post('/graphql')
+      .send({query: `{user(id:1) { primaryStyle secondaryStyle } }`})
+      .expect(200)
+    expect(response.body).toMatchObject({
+      data:{
+        user: {
+          primaryStyle: 'Classy',
+          secondaryStyle: 'Lumbersexual'
+        }
+      }
+    })
+    expect(response.body.data.user.primaryStyle).toBe('Classy')
+    expect(response.body.data.user.secondaryStyle).toBe('Lumbersexual')
+    done();
+  })
 })
