@@ -16,5 +16,14 @@ describe('test the truth', () => {
     )
   })
 
-  
+  it('returns all products', async (done) => {
+    const response = await request(server)
+      .post('/graphql')
+      .send({query: `{products { name } }`})
+      .expect(200)
+      expect(response.body.data.products.length).toBe(10);
+    done();
+  })
+
+
 })
