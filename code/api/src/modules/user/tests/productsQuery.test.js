@@ -25,5 +25,19 @@ describe('test the truth', () => {
     done();
   })
 
-
+  it('returns a product based on id and only has style info', async(done) => {
+    const response = await request(server)
+      .post('/graphql')
+      .send({query: `{products(id:1) { style } }`})
+      .expect(200)
+    expect(response.body).toMatchObject({
+      data:{
+        products: {
+          style: 'Classy'
+        }
+      }
+    })
+    expect(response.body.data.products.style).toBe('Classy')
+    done();
+  })
 })
