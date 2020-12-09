@@ -28,16 +28,16 @@ describe('test the truth', () => {
   it('returns a product based on id and only has style info', async(done) => {
     const response = await request(server)
       .post('/graphql')
-      .send({query: `{products(id:1) { style } }`})
+      .send({query: `{productById(productId:1) { style } }`})
       .expect(200)
     expect(response.body).toMatchObject({
       data:{
-        products: {
+        productById: {
           style: 'Classy'
         }
       }
     })
-    expect(response.body.data.products.style).toBe('Classy')
+    expect(response.body.data.productById.style).toBe('Classy')
     done();
   })
 })
