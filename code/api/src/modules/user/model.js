@@ -14,6 +14,12 @@ module.exports = function(sequelize, DataTypes) {
     },
     role: {
       type: DataTypes.TEXT
+    },
+    primaryStyle: {
+      type: DataTypes.STRING
+    },
+    secondaryStyle: {
+      type: DataTypes.STRING
     }
   })
 
