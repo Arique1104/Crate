@@ -1,5 +1,6 @@
 // Imports
 import axios from 'axios'
+// should look into how axios + graphql queries works together - different from basic fetch api calls 
 import { query, mutation } from 'gql-query-builder'
 
 // App Imports
