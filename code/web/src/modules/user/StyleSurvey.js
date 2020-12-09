@@ -40,18 +40,6 @@ render() {
         {/*^^ Repeat the grid and gridcell pattern for each element of the survey*/}
         <Button></Button>
       </form>
-      {/*so, Thots about this, we've got some options when it comes to recycling styling junk
-      thats already here. FOR EXAMPLE;
-
-      <Grid></Grid>
-
-      thinking that can go INTO the form to grid out the options a user can pick for style options
-      for each category? might be nifty. same goes for this guy;
-
-      <GridCell></GridCell>
-
-      just seems like an easy way to format that. after that, it's possible that we'll wanna use
-      the <Loading/> fella. not sure tho? idk might be nice for sad path stuff.*/}
     </div>
 
 
