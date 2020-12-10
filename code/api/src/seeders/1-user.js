@@ -26,6 +26,16 @@ module.exports = {
         secondaryStyle: null,
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        name: 'Another User Without Style',
+        email: 'user2@crate.com',
+        password: bcrypt.hashSync('123456', config.saltRounds),
+        role: params.user.roles.user,
+        primaryStyle: null,
+        secondaryStyle: null,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ])
   },
