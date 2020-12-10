@@ -8,7 +8,7 @@ module.exports = {
           'primaryStyle',
           {
             type: Sequelize.STRING,
-            allowNull: false,
+              allowNull: true,
           },
         ),
       ]);
