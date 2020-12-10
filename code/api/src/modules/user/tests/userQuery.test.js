@@ -42,4 +42,15 @@ describe('test the truth', () => {
     expect(response.body.data.user.secondaryStyle).toBe('Lumbersexual')
     done();
   })
+
+  it('updates a users styles', async (done) => {
+    const response = await request(server)
+      .post('/graphql')
+      .send({query: `mutation {userUpdate { name:id  } }`})
+      console.log(response.body)
+      .expect(200)
+      expect(response.body.data.users.length).toBe(2);
+    done();
+  })
+
 })
