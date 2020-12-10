@@ -28,22 +28,19 @@ export async function create(parentValue, { name, email, password }) {
 }
 
 // Update user
-export async function update(parentValue, { id, name, email, password, role, primaryStyle, secondaryStyle }, { auth }) {
-  if(auth.user && auth.user.role === params.user.roles.user) {
+export async function update(parentValue, { id, primaryStyle, secondaryStyle }) {
+  // if(auth.user && auth.user.role === params.user.roles.user) {
     return await models.User.update(
       {
-        name,
-        email,
-        password,
-        role,
+        id,
         primaryStyle,
         secondaryStyle
       },
       { where: { id } }
     )
-  } else {
-    throw new Error('Operation denied.')
-  }
+  // } else {
+  //   throw new Error('Operation denied.')
+  // }
 }
 
 export async function login(parentValue, { email, password }) {
