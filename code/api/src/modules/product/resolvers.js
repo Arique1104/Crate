@@ -43,13 +43,14 @@ export async function getRelated(parentValue, { productId }) {
 }
 
 // Create product
-export async function create(parentValue, { name, slug, description, type, gender, image }, { auth }) {
+export async function create(parentValue, { name, slug, description, type, style, gender, image }, { auth }) {
   if(auth.user && auth.user.role === params.user.roles.admin) {
     return await models.Product.create({
       name,
       slug,
       description,
       type,
+      style,
       gender,
       image
     })
@@ -59,7 +60,7 @@ export async function create(parentValue, { name, slug, description, type, gende
 }
 
 // Update product
-export async function update(parentValue, { id, name, slug, description, type, gender, image }, { auth }) {
+export async function update(parentValue, { id, name, slug, description, type, style, gender, image }, { auth }) {
   if(auth.user && auth.user.role === params.user.roles.admin) {
     return await models.Product.update(
       {
@@ -67,6 +68,7 @@ export async function update(parentValue, { id, name, slug, description, type, g
         slug,
         description,
         type,
+        style,
         gender,
         image
       },
