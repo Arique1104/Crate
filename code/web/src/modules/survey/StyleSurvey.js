@@ -19,31 +19,37 @@ class StyleSurvey extends Component {
     super(props)
 
     this.state = {
-      isLoading: '',
-      error: '',
-      styles: [],
+      styles: []
     }
   }
 
   render() {
     return (
       <div>
-        <form>
-          <Grid>
-            <GridCell>
-              {/*this is where the images and such go! they will be in a grid. we'll have 3 each.*/}
-            </GridCell>
-            <GridCell>
-              {/*this is where the images and such go! they will be in a grid. we'll have 3 each.*/}
-            </GridCell>
-            <GridCell>
-              {/*this is where the images and such go! they will be in a grid. we'll have 3 each.*/}
-            </GridCell>
-          </Grid>
-          {/*^^ Repeat the grid and gridcell pattern for each element of the survey*/}
-          <Button type="button">Final Submit</Button>
-        </form>
+
+          <h1>TEST</h1>
+
       </div>
     )
   }
 }
+
+// <form>
+//   <Grid>
+//     <GridCell>
+//       {/*this is where the images and such go! they will be in a grid. we'll have 3 each.*/}
+//     </GridCell>
+//     <GridCell>
+//       {/*this is where the images and such go! they will be in a grid. we'll have 3 each.*/}
+//     </GridCell>
+//     <GridCell>
+//       {/*this is where the images and such go! they will be in a grid. we'll have 3 each.*/}
+//     </GridCell>
+//   </Grid>
+//   {/*^^ Repeat the grid and gridcell pattern for each element of the survey*/}
+//   <Button type="button">Final Submit</Button>
+// </form>
+
+// export default connect()(withRouter(StyleSurvey))
+export default StyleSurvey
+//still needs to be connected and make Redux-y
