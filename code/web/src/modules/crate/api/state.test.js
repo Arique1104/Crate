@@ -13,6 +13,7 @@ describe('crates', () => {
     expect(result).toEqual(cratesInitialState)
   });
 
-  //test if no action
-  //
+  it('should change isLoading to true', () => {
+    const action = 
+  })
 })
