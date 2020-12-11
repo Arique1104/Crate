@@ -1,6 +1,6 @@
 import { crates, crate } from './state.js';
 
-describe('crates', () => {
+describe('crates reducer', () => {
   const cratesInitialState = {
     isLoading: false,
     error: null,
