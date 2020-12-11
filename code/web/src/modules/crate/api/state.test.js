@@ -17,13 +17,15 @@ describe('crates reducer', () => {
     expect(result).toEqual(cratesInitialState)
   });
 
-  it.skip('should change isLoading to true', () => {
+  it('should change isLoading to true', () => {
     const getListRequestAction = {
       type: CRATES_GET_LIST_REQUEST,
       error: null,
       isLoading: true
     }
 
-    const result = crates()
+    const result = crates(cratesInitialState, getListRequestAction)
+
+    expect(result).toEqual({...cratesInitialState, isLoading: true})
   })
 })
