@@ -17,7 +17,7 @@ describe('crates reducer', () => {
     expect(result).toEqual(cratesInitialState)
   });
 
-  it('should change isLoading to true when CRATES_GET_LSIT_REQUEST action is passed', () => {
+  it('should change isLoading to true when CRATES_GET_LIST_REQUEST action is passed', () => {
     const getListRequestAction = {
       type: CRATES_GET_LIST_REQUEST,
       error: null,
