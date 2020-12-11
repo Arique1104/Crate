@@ -1,3 +1,4 @@
+import { CRATES_GET_LIST_REQUEST } from './actions.js';
 import { crates, crate } from './state.js';
 
 describe('crates reducer', () => {
@@ -14,6 +15,12 @@ describe('crates reducer', () => {
   });
 
   it('should change isLoading to true', () => {
-    // const action = 
+    const getListRequestAction = {
+      type: CRATES_GET_LIST_REQUEST,
+      error: null,
+      isLoading = true
+    }
+
+    const result = crates()
   })
 })
