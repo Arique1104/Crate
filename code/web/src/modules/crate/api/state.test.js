@@ -29,5 +29,16 @@ describe('crates reducer', () => {
     expect(result).toEqual({...cratesInitialState, isLoading: true})
   })
 
-  
+  it('should add crates to a list on successful API call', () => {
+    const getListResponseAction = {
+      type: CRATES_GET_LIST_RESPONSE,
+      error: null,
+      isLoading: false,
+      list: action.list
+    }
+
+    const result = crates(cratesInitialState, getListResponseAction)
+
+    expect(result).toEqual({})
+  })
 })
