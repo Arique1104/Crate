@@ -2,11 +2,14 @@ import { CRATES_GET_LIST_REQUEST } from './actions.js';
 import { crates, crate } from './state.js';
 
 describe('crates reducer', () => {
-  const cratesInitialState = {
-    isLoading: false,
-    error: null,
-    list: []
-  };
+  let cratesInitialState;
+  beforeEach(() => {
+    cratesInitialState = {
+      isLoading: false,
+      error: null,
+      list: []
+    };
+  })
 
   it('should return the initial state as a default', () => {
     const result = crates(cratesInitialState, {});
@@ -14,11 +17,11 @@ describe('crates reducer', () => {
     expect(result).toEqual(cratesInitialState)
   });
 
-  it('should change isLoading to true', () => {
+  it.skip('should change isLoading to true', () => {
     const getListRequestAction = {
       type: CRATES_GET_LIST_REQUEST,
       error: null,
-      isLoading = true
+      isLoading: true
     }
 
     const result = crates()
