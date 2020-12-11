@@ -1,1 +1,3 @@
- export default {}
+ export default {
+   post: jest.fn(() => Promise.resolve({}))
+ };
