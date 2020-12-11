@@ -7,7 +7,7 @@ describe('crates reducer', () => {
     list: []
   };
 
-  it('should return the initial state if no action', () => {
+  it('should return the initial state as a default', () => {
     const result = crates(cratesInitialState, {});
 
     expect(result).toEqual(cratesInitialState)
