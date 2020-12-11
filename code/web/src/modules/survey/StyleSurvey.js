@@ -5,8 +5,10 @@ import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 
 //////UI stuff we'll probably need
-import { H3, H4 } from '../../ui/typography'
+import { Grid, GridCell } from '../../ui/grid'
 import Button from '../../ui/button'
+import ImageTile from '../../ui/image/Tile'
+import { H3, H4, H6 } from '../../ui/typography'
 import { grey, grey2 } from '../../ui/common/colors'
 
 //////ETC stuff we'll probably need
@@ -23,33 +25,45 @@ class StyleSurvey extends Component {
     }
   }
 
+  //
+
   render() {
     return (
       <div>
+        <Grid alignCenter={true} style={{ padding: '2em', backgroundColor: grey }}>
+          <GridCell style={{ textAlign: 'center'}}>
+            <H3 font='secondary'>Find your style!</H3>
+            <p style={{ marginTop: '1em', color: grey2 }}>Pick which styles suit your tastes!</p>
+          </GridCell>
+        </Grid>
+        <Grid>
+          <GridCell style={{ textAlign: 'center', padding: '1em'}}>
+            <H6 font='primary'>Literally Why Man</H6>
 
-          <h1>TEST</h1>
-
+          </GridCell>
+        </Grid>
+        <Button theme="primary">Submit</Button>
       </div>
     )
   }
 }
 
-// <form>
-//   <Grid>
-//     <GridCell>
-//       {/*this is where the images and such go! they will be in a grid. we'll have 3 each.*/}
-//     </GridCell>
-//     <GridCell>
-//       {/*this is where the images and such go! they will be in a grid. we'll have 3 each.*/}
-//     </GridCell>
-//     <GridCell>
-//       {/*this is where the images and such go! they will be in a grid. we'll have 3 each.*/}
-//     </GridCell>
-//   </Grid>
-//   {/*^^ Repeat the grid and gridcell pattern for each element of the survey*/}
-//   <Button type="button">Final Submit</Button>
-// </form>
+// <div>
+//   <form  onSubmit={console.log('test')}>
+//     <H3 style={{ marginTop: '2em' }} font="secondary">TOP STYLE SELECTION</H3>
+//     <Grid>
+//       <GridCell>
+//         <H6>TOP 1</H6>
+//       </GridCell>
+//       <GridCell>
+//         <H6>TOP 2</H6>
+//       </GridCell>
+//       <GridCell>
+//         <H6>TOP 3</H6>
+//       </GridCell>
+//     </Grid>
+//     <Button type="button" theme="secondary">TEST</Button>
+//   </form>
+// </div>
 
-// export default connect()(withRouter(StyleSurvey))
 export default StyleSurvey
-//still needs to be connected and make Redux-y
