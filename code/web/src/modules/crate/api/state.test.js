@@ -17,7 +17,7 @@ describe('crates reducer', () => {
     expect(result).toEqual(cratesInitialState)
   });
 
-  it('should change isLoading to true when CRATES_GET_LIST_REQUEST action is passed', () => {
+  it('should return a state object using CRATES_GET_LIST_REQUEST properties', () => {
     const mockGetListRequestAction = {
       type: CRATES_GET_LIST_REQUEST,
       error: null,
@@ -29,7 +29,7 @@ describe('crates reducer', () => {
     expect(result).toEqual({...cratesInitialState, isLoading: true})
   });
 
-  it('should add crates to a list on successful API call', () => {
+  it('should return state object update with list of crates', () => {
 
     const mockGetListResponseAction = {
       type: 'CRATES/GET_LIST_RESPONSE',
@@ -43,7 +43,7 @@ describe('crates reducer', () => {
     expect(result).toEqual({...cratesInitialState, list: ['mockCrate']})
   });
 
-  it('should return an error message on unsuccessful API call', () => {
+  it('should return an object using properties of CRATES/GET_LIST_FAILURE action', () => {
     const mockGetListFailureAction = {
       type: 'CRATES/GET_LIST_FAILURE',
       error: 'Some error ocurred. Please try again.',
@@ -56,7 +56,7 @@ describe('crates reducer', () => {
   });
 });
 
-describe.only('single crate reducer', () => {
+describe('single crate reducer', () => {
   let mockCrateInitialState;
   beforeEach(() => {
     mockCrateInitialState = {
@@ -73,7 +73,7 @@ describe.only('single crate reducer', () => {
  
   });
 
-  it('should change isLoading to true when action with type CRATES/GET_REQUEST is passed', () => {
+  it('should return a state object with isLoading as true when action with type CRATES/GET_REQUEST is passed', () => {
     const mockCratesGetRequest = {
       type: 'CRATES/GET_REQUEST',
       isLoading: true
