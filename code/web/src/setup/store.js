@@ -36,11 +36,17 @@ if (typeof window !== 'undefined') {
 }
 
 // Store
+const middleware = [thunk]
+const composeEnhancers =
+  typeof window === 'object' &&
+  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+      name: 'crate'
+    }) : compose
 export const store = createStore(
   rootReducer,
   initialState,
-
-  compose(
-    applyMiddleware(thunk),
+  composeEnhancers(
+    applyMiddleware(...middleware),
   )
 )
