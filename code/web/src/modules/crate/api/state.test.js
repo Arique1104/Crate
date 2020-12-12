@@ -1,6 +1,5 @@
 import { CRATES_GET_LIST_REQUEST } from './actions.js';
 import { crates, crate } from './state.js';
-import mockAxios from 'axios';
 
 describe('crates reducer', () => {
   let cratesInitialState;
