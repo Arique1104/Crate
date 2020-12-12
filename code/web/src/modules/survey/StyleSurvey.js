@@ -9,11 +9,13 @@ import { Grid, GridCell } from '../../ui/grid'
 import Button from '../../ui/button'
 import ImageTile from '../../ui/image/Tile'
 import { H3, H4, H6 } from '../../ui/typography'
-import { grey, grey2 } from '../../ui/common/colors'
+import { white, grey, grey2 } from '../../ui/common/colors'
+import { level1 } from '../../ui/common/shadows'
+
 
 //////ETC stuff we'll probably need
 import AuthCheck from '../auth/AuthCheck'
-//import { APP_URL } from '../../setup/config/env'
+import { APP_URL } from '../../setup/config/env'
 
 class StyleSurvey extends Component {
 
@@ -21,11 +23,39 @@ class StyleSurvey extends Component {
     super(props)
 
     this.state = {
-      styles: []
+      styles: [],
     }
   }
 
-  //
+  logStyleType = (e) => {
+    let jsxString = e.target.className
+    let jsxTagSplit = jsxString.split(' ')
+    let style = jsxTagSplit[1]
+    this.state.styles.push(style)
+  }
+
+  submitSurvey = (e) => {
+    console.log('giving to backend!')
+  }
+
+  populateSurveyImages(surveySection, image1, image2, image3) {
+    return (
+      <div >
+      <H6 font='secondary' style={{ textAlign: 'center', paddingBottom: '.5em', paddingTop: '1em'}}>{surveySection}</H6>
+        <Grid style={{ display: 'flex', backgroundColor: grey }}>
+          <GridCell style={{ padding: '1em' }}>
+            <ImageTile className='classic' onClick={this.logStyleType} width={300} height={300} shadow={level1} image={`${ APP_URL }${image1}`}/>
+          </GridCell>
+          <GridCell style={{ padding: '1em' }}>
+            <ImageTile className='punk' onClick={this.logStyleType} width={300} height={300} shadow={level1} image={`${ APP_URL }${image2}`}/>
+          </GridCell>
+          <GridCell style={{ padding: '1em' }}>
+            <ImageTile className='sporty' onClick={this.logStyleType} width={300} height={300} shadow={level1} image={`${ APP_URL }${image3}`}/>
+          </GridCell>
+        </Grid>
+      </div>
+    )
+  }
 
   render() {
     return (
@@ -36,34 +66,22 @@ class StyleSurvey extends Component {
             <p style={{ marginTop: '1em', color: grey2 }}>Pick which styles suit your tastes!</p>
           </GridCell>
         </Grid>
-        <Grid>
-          <GridCell style={{ textAlign: 'center', padding: '1em'}}>
-            <H6 font='primary'>Literally Why Man</H6>
-
+        <Grid justifyCenter={true}>
+          {this.populateSurveyImages('Tops', '/images/stock/survey/survey-classictop.jpg', '/images/stock/survey/survey-punktop.png', '/images/stock/survey/survey-sportytop.jpg')}
+          {this.populateSurveyImages('Bottoms', '/images/stock/survey/survey-classicbottom.png', '/images/stock/survey/survey-punkbottoms.jpg', '/images/stock/survey/survey-sportybottoms.jpg')}
+          {this.populateSurveyImages('Shoes', '/images/stock/survey/survey-classicshoes.jpeg', '/images/stock/survey/survey-sportyshoe.jpeg', '/images/stock/survey/survey-punkshoes.jpg')}
+          {this.populateSurveyImages('Accessories', '/images/stock/survey/survey-classicshoes.jpeg', '/images/stock/survey/survey-punkshoes.jpg', '/images/stock/survey/survey-sportyshoe.jpeg')}
+          {this.populateSurveyImages('Loungeware', '/images/stock/survey/survey-classicshoes.jpeg', '/images/stock/survey/survey-punkshoes.jpg', '/images/stock/survey/survey-sportyshoe.jpeg')}
+        </Grid>
+        <Grid justifyCenter={true}>
+          <GridCell  style={{ padding: '2em', textAlign: 'center' }}>
+            <Button onClick={this.submitSurvey} theme="primary">Submit</Button>
           </GridCell>
         </Grid>
-        <Button theme="primary">Submit</Button>
       </div>
     )
   }
 }
 
-// <div>
-//   <form  onSubmit={console.log('test')}>
-//     <H3 style={{ marginTop: '2em' }} font="secondary">TOP STYLE SELECTION</H3>
-//     <Grid>
-//       <GridCell>
-//         <H6>TOP 1</H6>
-//       </GridCell>
-//       <GridCell>
-//         <H6>TOP 2</H6>
-//       </GridCell>
-//       <GridCell>
-//         <H6>TOP 3</H6>
-//       </GridCell>
-//     </Grid>
-//     <Button type="button" theme="secondary">TEST</Button>
-//   </form>
-// </div>
 
 export default StyleSurvey
