@@ -55,9 +55,7 @@ class StyleSurvey extends Component {
 
   submitSurvey = (e) => {
     e.preventDefault()
-    console.log('giving to backend!')
-    // update store with styles from findUserStyle() 
-    // post
+    this.getStyleTally()
   }
 
   populateSurveyImages(surveySection, image1, image2, image3) {
