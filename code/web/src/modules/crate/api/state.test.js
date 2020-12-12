@@ -44,10 +44,10 @@ describe('crates reducer', () => {
     expect(result).toEqual({...cratesInitialState, list: ['mockCrate']})
   })
 
-  it.skip('should return an error message on unsuccessful API call', () => {
+  it('should return an error message on unsuccessful API call', () => {
     const mockGetListFailureAction = {
-      type: 'CRATES_GET_LIST_FAILURE',
-      error: 'Some error occurred. Please try again.',
+      type: 'CRATES/GET_LIST_FAILURE',
+      error: 'Some error ocurred. Please try again.',
       isLoading: false
     }
 
