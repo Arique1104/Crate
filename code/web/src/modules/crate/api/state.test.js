@@ -67,7 +67,9 @@ describe.only('single crate reducer', () => {
   });
 
   it('should return the initial state as a default', () => {
-    
+    const result = crate(mockCrateInitialState, {});
+
+    expect(result).toEqual(mockCrateInitialState);
  
   });
 
