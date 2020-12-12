@@ -41,17 +41,17 @@ class StyleSurvey extends Component {
     let sortedTally = Object.values(styles).sort((a, b) => b - a)
     Object.keys(styles).forEach(style => {
       if (sortedTally[0] && sortedTally[0] === styles[style]) {
-        this.state.topStyles.push(style)
+        this.setState([...this.state.styles, style])
       }
     });
     return styles
   }
-  
+
   logStyleType = (e) => {
     let jsxString = e.target.className
     let jsxTagSplit = jsxString.split(' ')
     let style = jsxTagSplit[1]
-    this.state.styles.push(style)
+    this.setState([...this.state.styles, style])
   }
 
   submitSurvey = (e) => {
