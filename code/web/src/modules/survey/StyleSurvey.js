@@ -24,9 +24,29 @@ class StyleSurvey extends Component {
 
     this.state = {
       styles: [],
+      topStyles: []
     }
   }
 
+  findUserStyles = () => {
+    const styleTally = this.state.styles.reduce((acc, style) => {
+      acc[style] += 1
+      return acc
+    }, {classic: 0, punk: 0, sporty: 0})
+    return styleTally
+  }
+
+  getStyleTally = () => {
+    const styles = this.findUserStyles()
+    let sortedTally = Object.values(styles).sort((a, b) => b - a)
+    Object.keys(styles).forEach(style => {
+      if (sortedTally[0] && sortedTally[0] === styles[style]) {
+        this.state.topStyles.push(style)
+      }
+    });
+    return styles
+  }
+  
   logStyleType = (e) => {
     let jsxString = e.target.className
     let jsxTagSplit = jsxString.split(' ')
@@ -35,7 +55,8 @@ class StyleSurvey extends Component {
   }
 
   submitSurvey = (e) => {
-    console.log('giving to backend!')
+    e.preventDefault()
+    this.getStyleTally()
   }
 
   populateSurveyImages(surveySection, image1, image2, image3) {

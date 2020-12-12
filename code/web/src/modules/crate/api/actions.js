@@ -24,6 +24,14 @@ export function getList(orderBy = 'DESC', isLoading = true) {
       isLoading
     })
 
+    // axios.post == fetch with post as body
+    // graphql has only 1 endpoint
+      // (instead of multiple in express.js server)
+      // query == GET || mutation == POST
+        // operation -> refering to crates in API
+        // variables -> what you're ordering list by 
+          //what you're giving to the API
+        // fields -> what you're getting back for each crate
     return axios.post(routeApi, query({
       operation: 'crates',
       variables: { orderBy },
