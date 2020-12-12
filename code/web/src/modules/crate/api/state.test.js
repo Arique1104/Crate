@@ -33,14 +33,26 @@ describe('crates reducer', () => {
   it('should add crates to a list on successful API call', () => {
 
     const getListResponseAction = {
-      type: 'CRATES_GET_LIST_RESPONSE',
+      type: 'CRATES/GET_LIST_RESPONSE',
       error: null,
       isLoading: false,
-      list: ['fakelist']
+      list: ['mockCrate']
     }
 
     const result = crates(cratesInitialState, getListResponseAction)
 
-    expect(result).toEqual({...cratesInitialState, list: ['fakelist']})
+    expect(result).toEqual({...cratesInitialState, list: ['mockCrate']})
+  })
+
+  it.skip('should return an error message on unsuccessful API call', () => {
+    const getListFailureAction = {
+      type: 'CRATES_GET_LIST_FAILURE',
+      error: 'Some error occurred. Please try again.',
+      isLoading: false
+    }
+
+    const result = crates(cratesInitialState, getListFailureAction)
+
+    expect(result).toEqual({isLoading: false, error: 'Some error ocurred. Please try again.', list: []})
   })
 })
