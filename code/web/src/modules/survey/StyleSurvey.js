@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
-import { setPrimaryStyle, setSecondaryStyle } from './api/actions'
+import { addPrimaryStyle, addSecondaryStyle } from './api/actions'
 
 //////UI stuff we'll probably need
 import { Grid, GridCell } from '../../ui/grid'
@@ -56,8 +56,8 @@ class StyleSurvey extends Component {
   }
 
   setStyles = () => {
-    this.props.setPrimaryStyle(this.state.topStyles[0]);
-    this.props.setSecondaryStyle(this.state.topstyles[1]);
+    addPrimaryStyle(this.state.topStyles[0]);
+    addSecondaryStyle(this.state.topStyles[1]);
   }
 
   submitSurvey = (e) => {

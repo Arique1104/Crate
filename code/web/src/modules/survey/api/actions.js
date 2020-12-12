@@ -9,7 +9,7 @@ export function addPrimaryStyle(surveyDetails) {
     return axios.post(routeApi, mutation({
       opertion: 'userUpdate',
       variables: surveyDetails,
-      fields: ['id', 'primaryStyle']
+      fields: [2, 'primaryStyle']
     }))
   }
 }
@@ -19,7 +19,7 @@ export function addSecondaryStyle(surveyDetails) {
     return axios.post(routeApi, mutation({
       operation: 'userUpdate',
       variables: surveyDetails,
-      fields: ['id', 'secondaryStyle']
+      fields: [2, 'secondaryStyle']
     }))
   }
 }
