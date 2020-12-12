@@ -56,7 +56,7 @@ module.exports = {
         type: params.product.types.shoe.id,
         style: "Classy",
         gender: params.user.gender.female.id,
-        image: '/images/stock/survey/survey-classicshoes',
+        image: '/images/stock/survey/survey-classicshoes.jpeg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -67,7 +67,7 @@ module.exports = {
         type: params.product.types.shoes.id,
         style: "Classy",
         gender: params.user.gender.male.id,
-        image: '/images/stock/survey/survey-classicshoes',
+        image: '/images/stock/survey/survey-classicshoes.jpeg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -78,7 +78,7 @@ module.exports = {
         type: params.product.types.accessory.id,
         style: "Classy",
         gender: params.user.gender.female.id,
-        image: '/images/stock/survey/survey-classicaccessory-female',
+        image: '/images/stock/survey/survey-classicaccessory-female.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -89,7 +89,7 @@ module.exports = {
         type: params.product.types.accessory.id,
         style: "Sporty",
         gender: params.user.gender.male.id,
-        image: '/images/stock/survey/survey-classicaccessory-male',
+        image: '/images/stock/survey/survey-classicaccessory-male.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -100,7 +100,7 @@ module.exports = {
         type: params.product.types.underpant.id,
         style: "Classy",
         gender: params.user.gender.female.id,
-        image: '/images/stock/survey/survey-classicunderpants-female',
+        image: '/images/stock/survey/survey-classicunderpants-female.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -111,7 +111,7 @@ module.exports = {
         type: params.product.types.underpant.id,
         style: "Classy",
         gender: params.user.gender.male.id,
-        image: '/images/stock/survey/survey-classicunderpants-male',
+        image: '/images/stock/survey/survey-classicunderpants-male.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -166,7 +166,7 @@ module.exports = {
         type: params.product.types.shoe.id,
         style: "Punk",
         gender: params.user.gender.female.id,
-        image: '/images/stock/survey/survey-punkshoes',
+        image: '/images/stock/survey/survey-punkshoes.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -177,7 +177,7 @@ module.exports = {
         type: params.product.types.shoes.id,
         style: "Punk",
         gender: params.user.gender.male.id,
-        image: '/images/stock/survey/survey-punkshoes',
+        image: '/images/stock/survey/survey-punkshoes.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -188,7 +188,7 @@ module.exports = {
         type: params.product.types.accessory.id,
         style: "Punk",
         gender: params.user.gender.female.id,
-        image: '/images/stock/survey/survey-classicaccessory-female',
+        image: '/images/stock/survey/survey-classicaccessory-female.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -199,7 +199,7 @@ module.exports = {
         type: params.product.types.accessory.id,
         style: "Punk",
         gender: params.user.gender.male.id,
-        image: '/images/stock/survey/survey-classicaccessory-male',
+        image: '/images/stock/survey/survey-classicaccessory-male.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -210,7 +210,7 @@ module.exports = {
         type: params.product.types.underpant.id,
         style: "Punk",
         gender: params.user.gender.female.id,
-        image: '/images/stock/survey/survey-classicunderpants-female',
+        image: '/images/stock/survey/survey-classicunderpants-female.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -221,7 +221,7 @@ module.exports = {
         type: params.product.types.underpant.id,
         style: "Punk",
         gender: params.user.gender.male.id,
-        image: '/images/stock/survey/survey-classicunderpants-male',
+        image: '/images/stock/survey/survey-classicunderpants-male.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -276,7 +276,7 @@ module.exports = {
         type: params.product.types.shoe.id,
         style: "Sporty",
         gender: params.user.gender.female.id,
-        image: '/images/stock/survey/survey-sportyshoes',
+        image: '/images/stock/survey/survey-sportyshoes.jpeg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -287,7 +287,7 @@ module.exports = {
         type: params.product.types.shoes.id,
         style: "Sporty",
         gender: params.user.gender.male.id,
-        image: '/images/stock/survey/survey-sportyshoes',
+        image: '/images/stock/survey/survey-sportyshoes.jpeg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -298,7 +298,7 @@ module.exports = {
         type: params.product.types.accessory.id,
         style: "Sporty",
         gender: params.user.gender.female.id,
-        image: '/images/stock/survey/survey-sportyaccessory-female',
+        image: '/images/stock/survey/survey-sportyaccessory-female.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -309,7 +309,7 @@ module.exports = {
         type: params.product.types.accessory.id,
         style: "Sporty",
         gender: params.user.gender.male.id,
-        image: '/images/stock/survey/survey-sportyaccessory-male',
+        image: '/images/stock/survey/survey-sportyaccessory-male.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -320,7 +320,7 @@ module.exports = {
         type: params.product.types.underpant.id,
         style: "Sporty",
         gender: params.user.gender.female.id,
-        image: '/images/stock/survey/survey-classicunderpants-female',
+        image: '/images/stock/survey/survey-classicunderpants-female.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -331,7 +331,7 @@ module.exports = {
         type: params.product.types.underpant.id,
         style: "Sporty",
         gender: params.user.gender.male.id,
-        image: '/images/stock/survey/survey-classicunderpants-male',
+        image: '/images/stock/survey/survey-classicunderpants-male.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       }
