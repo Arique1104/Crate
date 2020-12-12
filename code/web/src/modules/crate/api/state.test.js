@@ -19,39 +19,39 @@ describe('crates reducer', () => {
   });
 
   it('should change isLoading to true when CRATES_GET_LIST_REQUEST action is passed', () => {
-    const getListRequestAction = {
+    const mockGetListRequestAction = {
       type: CRATES_GET_LIST_REQUEST,
       error: null,
       isLoading: true
     }
 
-    const result = crates(cratesInitialState, getListRequestAction)
+    const result = crates(cratesInitialState, mockGetListRequestAction)
 
     expect(result).toEqual({...cratesInitialState, isLoading: true})
   })
 
   it('should add crates to a list on successful API call', () => {
 
-    const getListResponseAction = {
+    const mockGetListResponseAction = {
       type: 'CRATES/GET_LIST_RESPONSE',
       error: null,
       isLoading: false,
       list: ['mockCrate']
     }
 
-    const result = crates(cratesInitialState, getListResponseAction)
+    const result = crates(cratesInitialState, mockGetListResponseAction)
 
     expect(result).toEqual({...cratesInitialState, list: ['mockCrate']})
   })
 
   it.skip('should return an error message on unsuccessful API call', () => {
-    const getListFailureAction = {
+    const mockGetListFailureAction = {
       type: 'CRATES_GET_LIST_FAILURE',
       error: 'Some error occurred. Please try again.',
       isLoading: false
     }
 
-    const result = crates(cratesInitialState, getListFailureAction)
+    const result = crates(cratesInitialState, mockGetListFailureAction)
 
     expect(result).toEqual({isLoading: false, error: 'Some error ocurred. Please try again.', list: []})
   })
