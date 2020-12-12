@@ -27,14 +27,12 @@ class StyleSurvey extends Component {
     }
   }
 
-  //write method to find majority style in state array
-  findUserStyle = () => {
-    // this should be updated with most frequent selections in this.state.styles 
-    return {
-      id: 2,
-      primaryStyle: "Racecar Driver",
-      secondaryStyle: "Punk"
-    }
+  findUserStyles = () => {
+    const styleTally = this.state.styles.reduce((acc, style) => {
+      acc[style] += 1
+      return acc
+    }, {classic: 0, punk: 0, sporty: 0})
+    return styleTally
   }
 
   logStyleType = (e) => {
@@ -47,7 +45,8 @@ class StyleSurvey extends Component {
   submitSurvey = (e) => {
     e.preventDefault()
     console.log('giving to backend!')
-    this.findUserStyle()
+    // update store with styles from findUserStyle() 
+    // post
   }
 
   populateSurveyImages(surveySection, image1, image2, image3) {
