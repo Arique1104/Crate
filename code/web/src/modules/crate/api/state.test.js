@@ -55,3 +55,14 @@ describe('crates reducer', () => {
     expect(result).toEqual({isLoading: false, error: 'Some error ocurred. Please try again.', list: []})
   })
 })
+
+describe('single crate reducer', () => {
+  let crateInitialState;
+  beforeEach(() => {
+    crateInitialState = {
+      isLoading: false,
+      error: null,
+      item: {}
+    };
+  });
+});
