@@ -46,10 +46,10 @@ describe('test the truth', () => {
   it('updates a users styles', async (done) => {
     const response = await request(server)
       .post('/graphql')
-      .send({query: `mutation {userUpdate { id  } }`})
-      console.log(response.body)
+      .send({query: `mutation { userUpdate( id: 2, primaryStyle: "Racecar Driver", secondaryStyle: "Punk" ) { id primaryStyle secondaryStyle } }`})
       .expect(200)
-      expect(response.body.data.users.length).toBe(2);
+      expect(response.body.data.userUpdate.primaryStyle).toBe('Racecar Driver');
+      expect(response.body.data.userUpdate.secondaryStyle).toBe('Punk');
     done();
   })
 
