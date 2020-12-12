@@ -14,6 +14,7 @@ const ProductType = new GraphQLObjectType({
     style: { type: GraphQLString },
     gender: { type: GraphQLInt },
     description: { type: GraphQLString },
+    style: { type: GraphQLString },
     image: { type: GraphQLString },
     createdAt: { type: GraphQLString },
     updatedAt: { type: GraphQLString }
