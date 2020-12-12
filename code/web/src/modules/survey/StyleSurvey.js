@@ -24,6 +24,7 @@ class StyleSurvey extends Component {
 
     this.state = {
       styles: [],
+      topStyles: []
     }
   }
 
