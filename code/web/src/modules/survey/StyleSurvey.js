@@ -27,6 +27,8 @@ class StyleSurvey extends Component {
     }
   }
 
+  //write method to find majority style in state array
+
   logStyleType = (e) => {
     let jsxString = e.target.className
     let jsxTagSplit = jsxString.split(' ')
