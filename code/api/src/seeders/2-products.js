@@ -87,7 +87,7 @@ module.exports = {
         slug: 'belt-for-men',
         description: 'A very nice belt for men.',
         type: params.product.types.accessory.id,
-        style: "Classy",
+        style: "Sporty",
         gender: params.user.gender.male.id,
         image: '/images/stock/survey/survey-classicaccessory-male',
         createdAt: new Date(),
