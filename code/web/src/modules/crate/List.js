@@ -1,5 +1,6 @@
 // Imports
 import React, { PureComponent } from 'react'
+import { Provider,} from 'react-redux';
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Helmet } from 'react-helmet'
