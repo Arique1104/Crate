@@ -29,6 +29,11 @@ export const productCreate = {
       type: GraphQLInt
     },
 
+    style: {
+      name: 'type',
+      type: GraphQLInt
+    },
+
     gender: {
       name: 'gender',
       type: GraphQLInt
@@ -67,6 +72,11 @@ export const productUpdate = {
     },
 
     type: {
+      name: 'type',
+      type: GraphQLInt
+    },
+
+    style: {
       name: 'type',
       type: GraphQLInt
     },

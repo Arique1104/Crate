@@ -27,6 +27,29 @@ export async function create(parentValue, { name, email, password }) {
   }
 }
 
+// Update user
+export async function update(parentValue, { id, name, email, password, role, primaryStyle, secondaryStyle }) {
+  const user = await models.User.findOne({ where: { id } })
+
+
+  if(user) {
+    return await user.update(
+      {
+        id,
+        name,
+        email,
+        password,
+        role,
+        primaryStyle,
+        secondaryStyle
+      },
+      { where: { id } }
+    )
+  } else {
+    throw new Error('Please login first to update information.')
+  }
+}
+
 export async function login(parentValue, { email, password }) {
   const user = await models.User.findOne({ where: { email } })
 
@@ -47,7 +70,9 @@ export async function login(parentValue, { email, password }) {
         id: userDetails.id,
         name: userDetails.name,
         email: userDetails.email,
-        role: userDetails.role
+        role: userDetails.role,
+        primaryStyle: userDetails.primaryStyle,
+        secondaryStyle: userDetails.secondaryStyle
       }
 
       return {
