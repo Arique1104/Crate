@@ -14,6 +14,7 @@ import { white, grey2, black } from '../../ui/common/colors'
 // App Imports
 import { APP_URL } from '../../setup/config/env'
 import userRoutes from '../../setup/routes/user'
+import styleSurvey from '../../setup/routes/survey'
 import { messageShow, messageHide } from '../common/api/actions'
 import { create } from '../subscription/api/actions'
 
@@ -26,6 +27,10 @@ class Item extends PureComponent {
     this.state = {
       isLoading: false
     }
+  }
+
+  onClickSurvey = () => {
+    this.props.history.push(styleSurvey.styleSurvey.path)
   }
 
   onClickSubscribe = (crateId) => {
@@ -41,7 +46,6 @@ class Item extends PureComponent {
           this.props.messageShow(response.data.errors[0].message)
         } else {
           this.props.messageShow('Subscribed successfully.')
-
           this.props.history.push(userRoutes.subscriptions.path)
         }
       })
@@ -77,7 +81,7 @@ class Item extends PureComponent {
           <p style={{ textAlign: 'center', marginTop: '1.5em', marginBottom: '1em' }}>
             <Button
               theme="primary"
-              onClick={this.onClickSubscribe.bind(this, id)}
+              onClick={this.onClickSurvey}
               type="button"
               disabled={ isLoading }
             >
@@ -89,6 +93,7 @@ class Item extends PureComponent {
     )
   }
 }
+// onClick={this.onClickSubscribe.bind(this, id)}
 
 // Component Properties
 Item.propTypes = {
