@@ -9,7 +9,7 @@ describe('crates reducer', () => {
       error: null,
       list: []
     };
-  })
+  });
 
   it('should return the initial state as a default', () => {
     const result = crates(cratesInitialState, {});
@@ -27,7 +27,7 @@ describe('crates reducer', () => {
     const result = crates(cratesInitialState, mockGetListRequestAction)
 
     expect(result).toEqual({...cratesInitialState, isLoading: true})
-  })
+  });
 
   it('should add crates to a list on successful API call', () => {
 
@@ -41,7 +41,7 @@ describe('crates reducer', () => {
     const result = crates(cratesInitialState, mockGetListResponseAction)
 
     expect(result).toEqual({...cratesInitialState, list: ['mockCrate']})
-  })
+  });
 
   it('should return an error message on unsuccessful API call', () => {
     const mockGetListFailureAction = {
@@ -53,8 +53,8 @@ describe('crates reducer', () => {
     const result = crates(cratesInitialState, mockGetListFailureAction)
 
     expect(result).toEqual({isLoading: false, error: 'Some error ocurred. Please try again.', list: []})
-  })
-})
+  });
+});
 
 describe('single crate reducer', () => {
   let crateInitialState;
