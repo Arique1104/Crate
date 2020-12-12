@@ -28,6 +28,13 @@ class StyleSurvey extends Component {
   }
 
   //write method to find majority style in state array
+  findUserStyle = () => {
+    return {
+      id: 2,
+      primaryStyle: "Racecar Driver",
+      secondaryStyle: "Punk"
+    }
+  }
 
   logStyleType = (e) => {
     let jsxString = e.target.className
