@@ -7,9 +7,9 @@ import { routeApi } from '../../../setup/routes'
 export function addPrimaryStyle(surveyDetails) {
   return dispatch => {
     return axios.post(routeApi, mutation({
-      opertion: 'primaryStyle',
+      opertion: 'userUpdate',
       variables: surveyDetails,
-      fields: ['id', 'primaryStyle', 'secondaryStyle']
+      fields: ['id', 'primaryStyle']
     }))
   }
 }
@@ -17,9 +17,9 @@ export function addPrimaryStyle(surveyDetails) {
 export function addSecondaryStyle(surveyDetails) {
   return dispatch => {
     return axios.post(routeApi, mutation({
-      operation: 'secondaryStyle',
+      operation: 'userUpdate',
       variables: surveyDetails,
-      fields: ['id', 'primaryStyle', 'secondaryStyle']
+      fields: ['id', 'secondaryStyle']
     }))
   }
 }
