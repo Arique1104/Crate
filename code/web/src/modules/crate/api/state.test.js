@@ -1,5 +1,6 @@
 import { CRATES_GET_LIST_REQUEST } from './actions.js';
 import { crates, crate } from './state.js';
+import mockAxios from 'axios';
 
 describe('crates reducer', () => {
   let cratesInitialState;
@@ -30,15 +31,16 @@ describe('crates reducer', () => {
   })
 
   it('should add crates to a list on successful API call', () => {
+
     const getListResponseAction = {
-      type: CRATES_GET_LIST_RESPONSE,
+      type: 'CRATES_GET_LIST_RESPONSE',
       error: null,
       isLoading: false,
-      list: action.list
+      list: ['fakelist']
     }
 
     const result = crates(cratesInitialState, getListResponseAction)
 
-    expect(result).toEqual({})
+    expect(result).toEqual({...cratesInitialState, list: ['fakelist']})
   })
 })
