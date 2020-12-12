@@ -3,11 +3,22 @@ import { query, mutation } from 'gql-query-builder'
 import { routeApi } from '../../../setup/routes'
 
 
+//post user styles
+export function addPrimaryStyle(surveyDetails) {
+  return dispatch => {
+    return axios.post(routeApi, mutation({
+      opertion: 'primaryStyle',
+      variables: surveyDetails,
+      fields: //user profile object?
+    }))
+  }
+}
 
 
 
 
 
+//get user styles
 
 // axios.post == fetch with post as body
     // graphql has only 1 endpoint
