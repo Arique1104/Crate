@@ -3,18 +3,26 @@ import { query, mutation } from 'gql-query-builder'
 import { routeApi } from '../../../setup/routes'
 
 
-//post user styles
+//post user styles mutation
 export function addPrimaryStyle(surveyDetails) {
   return dispatch => {
     return axios.post(routeApi, mutation({
       opertion: 'primaryStyle',
       variables: surveyDetails,
-      fields: //user profile object?
+      fields: ['id', 'primaryStyle', 'secondaryStyle']
     }))
   }
 }
 
-
+export function addSecondaryStyle(surveyDetails) {
+  return dispatch => {
+    return axios.post(routeApi, mutation({
+      operation: 'secondaryStyle',
+      variables: surveyDetails,
+      fields: ['id', 'primaryStyle', 'secondaryStyle']
+    }))
+  }
+}
 
 
 
