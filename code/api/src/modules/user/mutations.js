@@ -35,21 +35,6 @@ export const userUpdate = {
       name: 'id',
       type: GraphQLInt
     },
-    //
-    // name: {
-    //   name: 'name',
-    //   type: GraphQLString
-    // },
-    //
-    // email: {
-    //   name: 'email',
-    //   type: GraphQLString
-    // },
-    //
-    // password: {
-    //   name: 'password',
-    //   type: GraphQLString
-    // },
 
     primaryStyle: {
       name: 'primaryStyle',
