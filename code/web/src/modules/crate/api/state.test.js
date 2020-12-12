@@ -56,13 +56,29 @@ describe('crates reducer', () => {
   });
 });
 
-describe('single crate reducer', () => {
-  let crateInitialState;
+describe.only('single crate reducer', () => {
+  let mockCrateInitialState;
   beforeEach(() => {
-    crateInitialState = {
+    mockCrateInitialState = {
       isLoading: false,
       error: null,
       item: {}
     };
   });
+
+  it('should return the initial state as a default', () => {
+    
+ 
+  });
+
+  it('should change isLoading to true when action with type CRATES/GET_REQUEST is passed', () => {
+    const mockCratesGetRequest = {
+      type: 'CRATES/GET_REQUEST',
+      isLoading: true
+    };
+    
+    const result = crate(mockCrateInitialState, mockCratesGetRequest);
+
+    expect(result).toEqual({...mockCrateInitialState, isLoading: true});
+  })
 });
