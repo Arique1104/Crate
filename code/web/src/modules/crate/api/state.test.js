@@ -83,4 +83,17 @@ describe.only('single crate reducer', () => {
 
     expect(result).toEqual({...mockCrateInitialState, isLoading: true});
   })
+
+  it('should use properties of CRATES/GET_RESPONSE actions to update state object', () => {
+    const mockCratesGetResponse = {
+      type: 'CRATES/GET_RESPONSE',
+      error: null,
+      isLoading: false,
+      item: {'mockItem': 'mockItemValue'}
+    }
+
+    const result = crate(mockCrateInitialState, mockCratesGetResponse)
+
+    expect(result).toEqual({...mockCrateInitialState, item:{'mockItem': 'mockItemValue'}})
+  })
 });
