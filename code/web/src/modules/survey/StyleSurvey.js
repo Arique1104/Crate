@@ -29,6 +29,7 @@ class StyleSurvey extends Component {
 
   //write method to find majority style in state array
   findUserStyle = () => {
+    // this should be updated with most frequent selections in this.state.styles 
     return {
       id: 2,
       primaryStyle: "Racecar Driver",
@@ -44,7 +45,9 @@ class StyleSurvey extends Component {
   }
 
   submitSurvey = (e) => {
+    e.preventDefault()
     console.log('giving to backend!')
+    this.findUserStyle()
   }
 
   populateSurveyImages(surveySection, image1, image2, image3) {
