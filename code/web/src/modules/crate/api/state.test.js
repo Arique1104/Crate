@@ -84,7 +84,7 @@ describe.only('single crate reducer', () => {
     expect(result).toEqual({...mockCrateInitialState, isLoading: true});
   })
 
-  it('should use properties of CRATES/GET_RESPONSE actions to update state object', () => {
+  it('should use properties of CRATES/GET_RESPONSE action to update state object', () => {
     const mockCratesGetResponse = {
       type: 'CRATES/GET_RESPONSE',
       error: null,
@@ -95,5 +95,17 @@ describe.only('single crate reducer', () => {
     const result = crate(mockCrateInitialState, mockCratesGetResponse)
 
     expect(result).toEqual({...mockCrateInitialState, item:{'mockItem': 'mockItemValue'}})
+  });
+
+  it('should use properties of CRATES/GET_FAILURE action to update state object', () => {
+    const mockCratesGetFailure = {
+      type: 'CRATES/GET_FAILURE',
+      error: 'Some error ocurred. Please try again',
+      isLoading: false
+    }
+
+    const result = crate(mockCrateInitialState, mockCratesGetFailure)
+
+    expect(result).toEqual({...mockCrateInitialState, error: 'Some error ocurred. Please try again'})
   })
 });
