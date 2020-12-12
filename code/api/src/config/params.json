@@ -1,13 +1,25 @@
 {
   "product": {
     "types": {
-      "cloth": {
+      "top": {
         "id": 1,
-        "name": "Cloth"
+        "name": "Top"
+      },
+      "bottom": {
+        "id": 2,
+        "name": "Bottom"
+      },
+      "shoe": {
+        "id": 3,
+        "name": "shoe"
       },
       "accessory": {
         "id": 2,
         "name": "Accessories"
+      },
+      "underpant": {
+        "id": 1,
+        "name": "Underpant"
       }
     }
   },
