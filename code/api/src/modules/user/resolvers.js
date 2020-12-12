@@ -28,10 +28,14 @@ export async function create(parentValue, { name, email, password }) {
 }
 
 // Update user
-export async function update(parentValue, { id, name, email, password, role, primaryStyle, secondaryStyle }, { auth }) {
-  if(auth.user && auth.user.role === params.user.roles.user) {
-    return await models.User.update(
+export async function update(parentValue, { id, name, email, password, role, primaryStyle, secondaryStyle }) {
+  const user = await models.User.findOne({ where: { id } })
+
+
+  if(user) {
+    return await user.update(
       {
+        id,
         name,
         email,
         password,
@@ -42,7 +46,7 @@ export async function update(parentValue, { id, name, email, password, role, pri
       { where: { id } }
     )
   } else {
-    throw new Error('Operation denied.')
+    throw new Error('Please login first to update information.')
   }
 }
 
