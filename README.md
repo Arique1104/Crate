@@ -8,9 +8,9 @@ Our additions lay the groundwork to helping the user understand their personal s
 ## Setup and Running
 - Node installation:
   - Open the Terminal app and type brew update. This updates Homebrew with a list of the latest version of Node.
-  - **Type `brew install node`.
-  - **Type `brew update`.
-  - **Type `brew update node`.
+  - **Type `brew install node`.**
+  - **Type `brew update`.**
+  - **Type `brew update node`.**
 
 - Postgres installation:
   - Follow the instructions here: [https://postgresapp.com/](https://postgresapp.com/)
@@ -81,6 +81,22 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 ## Technology Used
 
 ## Wins and Challenges
+
+#### Wins
+- Successfully establishing open and consistent lines of communication between Frontend and Backend.
+- Keeping up with daily coordinated standups.
+- Working with each others' stacks and aiding in debugging with each team.
+- Diving into a new codebase and grasping the flow of the data.
+- Backend learning a whole new language in the short time allotted.
+- Successfully paring with three other team members with whom we don't share a common coding language.
+- Overall coordinating workflow between two different stacks.
+
+#### Challenges
+- Getting a grasp of the code base without being able to actually code in it.
+- Backend working with a brand new language.
+- Adjusting to `rebase` workflow, including the merge conflicts that went along with it.
+- Testing in a Redux environment (FE).
+- Testing in JavaScript (BE).
 
 ## Future Iterations
 
