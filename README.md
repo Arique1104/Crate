@@ -57,7 +57,6 @@ Our additions lay the groundwork to helping the user understand their personal s
     - `sequelize db:seed:all`
 
 ### Common errors
-
 When running `npm run setup` in the api directory:
 ```
 ERROR:root:code for hash md5 was not found.
@@ -83,10 +82,20 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 ## Wins and Challenges
 
 ## Future Iterations
-
 First and foremost, our very first iteration would be to complete the functionality.
 
-Beyond that, updating the survey
+Beyond that, we would do these:
+  - Frontend:
+    - Update the survey so that:
+      - There is feedback denoting that an article of clothing had been selected.
+      - Only one article of clothing is able to be selected in each clothing category.
+      - The clothing options only log one click, and if another one is clicked, the results array reflects thing.
+  - Backend:
+    - Update the User migration to require authorization.
+    - Test the above
+
+## Learning Goals
+
 
 ## Contributing
 
