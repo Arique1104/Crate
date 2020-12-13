@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
+import { addPrimaryStyle, addSecondaryStyle } from './api/actions'
 
 //////UI stuff we'll probably need
 import { Grid, GridCell } from '../../ui/grid'
@@ -41,22 +42,28 @@ class StyleSurvey extends Component {
     let sortedTally = Object.values(styles).sort((a, b) => b - a)
     Object.keys(styles).forEach(style => {
       if (sortedTally[0] && sortedTally[0] === styles[style]) {
-        this.state.topStyles.push(style)
+        this.setState([...this.state.styles, style])
       }
     });
     return styles
   }
-  
+
   logStyleType = (e) => {
     let jsxString = e.target.className
     let jsxTagSplit = jsxString.split(' ')
     let style = jsxTagSplit[1]
-    this.state.styles.push(style)
+    this.setState([...this.state.styles, style])
+  }
+
+  setStyles = () => {
+    addPrimaryStyle(this.state.topStyles[0]);
+    addSecondaryStyle(this.state.topStyles[1]);
   }
 
   submitSurvey = (e) => {
     e.preventDefault()
     this.getStyleTally()
+    this.setStyles()
   }
 
   populateSurveyImages(surveySection, image1, image2, image3) {
