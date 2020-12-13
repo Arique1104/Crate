@@ -58,9 +58,10 @@ foobar.singularize('phenomena') # returns 'phenomenon'
 
 ## Skills
 
-### Git workflow
-- Rebase
+### Workflow
+- Git Rebase
 - PR's and code review
+- Test-driven development
 
 ### AGILE project management
 - Daily standup's
@@ -71,6 +72,24 @@ foobar.singularize('phenomena') # returns 'phenomenon'
 - Diagram data flow
 - Code annotation
 - Wireframing
+
+
+## Technologies
+
+### Front-end
+- JavaScript
+- HTML
+- CSS styled components
+- React/Redux 
+- NPM
+
+###  Back-end
+- Node.js
+- PSQL
+- GraphQL
+- Postgres
+- Sequelize
+- Yarn
 
 ## Contributors
 - Ebou Jobe - [GitHub](https://github.com/ebouJ)
