@@ -20,9 +20,9 @@ Our additions lay the groundwork to helping the user understand their personal s
     ```
   - Close or reload your terminal window
   - Type `which psql` in your terminal you should see the following output:
-  ```
-    /Applications/Postgres.app/Contents/Versions/latest/bin/psql
-  ```
+    ```
+      /Applications/Postgres.app/Contents/Versions/latest/bin/psql
+    ```
   - Type `psql` in your terminal to verify that your postgres CLI is working.
   - Clone repo `git clone git@github.com:atulmy/crate.git crate`
 
@@ -47,14 +47,17 @@ Our additions lay the groundwork to helping the user understand their personal s
 
 - Database installation
   - Install Sequelize by running these on the command line
-    - `npm install --save sequelize`
-    - `npm install --save pg pg-hstore`
+    - `npm i --save sequelize`
+    - `npm i --g sequelize-cli`
     - `yarn add sequelize`
+  - Create testing database:
+    - type `psql crates`
+    - type `CREATE DATABASE crate_testing;`
   - Run on the command line, white in the `/api` folder, the following code to setup the database:
-    - `sequelize init`
     - `sequelize db:create`
     - `sequelize db:migrate`
     - `sequelize db:seed:all`
+
 
 ### Common errors
 
@@ -74,9 +77,6 @@ Run `ls /usr/local/Cellar/openssl` - This should display 1.0.2t (potentially 1.0
 Based on that version run: `brew switch openssl 1.0.2t` or `brew switch openssl 1.0.2r`
 
 Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
-
-## Usage
-
 
 ## Skills
 
@@ -124,12 +124,13 @@ Beyond that, we would do these:
       - There is feedback denoting that an article of clothing had been selected.
       - Only one article of clothing is able to be selected in each clothing category.
       - The clothing options only log one click, and if another one is clicked, the results array reflects thing.
+      - It provides feedback as to what your survey results are.
+    - Sad path testing.
+    - Integration/Async Testing
   - Backend:
     - Update the User migration to require authorization.
-    - Test the above
-
-## Learning Goals
-
+    - Test the above.
+    - Integrate the user's style with the crates to allow for more personalized products.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
