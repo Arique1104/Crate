@@ -83,3 +83,4 @@ Please make sure to update tests as appropriate.
 - [Project Board](https://github.com/Arique1104/Crate/projects/1)
 - [Wireframe](https://www.figma.com/file/l4Si2eYviJaALqJd7hGPkn/Crate---M4-BEEFEE-Project?node-id=0%3A1)
 - [Dataflow Diagram](https://jamboard.google.com/d/1YGkwFV1xnleAsDtARSTBzA3OVC5OnC4QGX_ydD_ai60/viewer)
+- [Project Specs](https://mod4.turing.io/projects/crate/crate.html)
