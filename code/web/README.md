@@ -5,20 +5,6 @@ Crate, by LABHAT, is an updated version of an existing repo created by Turing Sc
 
 Our additions lay the groundwork to helping the user understand their personal style, and start receiving more personalized creates.
 
-## Contributors
-- Ebou Jobe - [GitHub](https://github.com/ebouJ)
-- Nenad Radovanovic - [GitHub](https://github.com/nrcloud) · [Twitter](https://twitter.com/publicshone)
-- Nicholas Drew - [GitHub](https://github.com/nickdrew)
-- Mateus Abdala - [GitHub](https://github.com/mateusabdala)
-- Hossein Nedaee - [GitHub](https://github.com/hosseinnedaee)
-- Mohammad Afzal - [GitHub](https://github.com/afzalex)
-- 👤 **L**uke Hunter James-Erickson - [GitHub](https://github.com/drewwilliams5280)
-- 👤 **A**rique Aguilar - [GitHub](https://github.com/Arique1104)
-- 👤 **B**rigette Doelp - [GitHub](https://github.com/brigettedoelp)
-- 👤 **H**anna Kim - [GitHub](https://github.com/hannakim91)
-- 👤 **A**ndrew Williams - [GitHub](https://github.com/)
-- 👤 **T**im Keresey - [GitHub](https://github.com/timkeresey)
-
 ## Setup and Running
 - Prerequisites
 - Node installation:
@@ -69,6 +55,19 @@ foobar.pluralize('word') # returns 'words'
 foobar.pluralize('goose') # returns 'geese'
 foobar.singularize('phenomena') # returns 'phenomenon'
 ```
+## Contributors
+- Ebou Jobe - [GitHub](https://github.com/ebouJ)
+- Nenad Radovanovic - [GitHub](https://github.com/nrcloud) · [Twitter](https://twitter.com/publicshone)
+- Nicholas Drew - [GitHub](https://github.com/nickdrew)
+- Mateus Abdala - [GitHub](https://github.com/mateusabdala)
+- Hossein Nedaee - [GitHub](https://github.com/hosseinnedaee)
+- Mohammad Afzal - [GitHub](https://github.com/afzalex)
+- 👤 **L**uke Hunter James-Erickson - [GitHub](https://github.com/drewwilliams5280)
+- 👤 **A**rique Aguilar - [GitHub](https://github.com/Arique1104)
+- 👤 **B**rigette Doelp - [GitHub](https://github.com/brigettedoelp)
+- 👤 **H**anna Kim - [GitHub](https://github.com/hannakim91)
+- 👤 **A**ndrew Williams - [GitHub](https://github.com/)
+- 👤 **T**im Keresey - [GitHub](https://github.com/timkeresey)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -77,6 +76,8 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
 
 ## Additional Links
 - [DTR](https://docs.google.com/document/d/1e7oHMyNoO9tgJPT2e-Eh5AHE19mBNjuCA2Olk0Lfej4/edit)
