@@ -78,7 +78,40 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 ## Usage
 
 
-## Technology Used
+## Skills
+
+### Workflow
+- Git Rebase
+- PR's and code review
+- Test-driven development
+
+### AGILE project management
+- Daily standup's
+- Retros
+- Project board
+
+### Analyzing existing codebase
+- Diagram data flow
+- Code annotation
+- Wireframing
+
+
+## Technologies
+
+### Front-end
+- JavaScript
+- HTML
+- CSS styled components
+- React/Redux
+- NPM
+
+###  Back-end
+- Node.js
+- PSQL
+- GraphQL
+- Postgres
+- Sequelize
+- Yarn
 
 ## Wins and Challenges
 
@@ -99,7 +132,23 @@ Beyond that, we would do these:
 
 
 ## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+Please make sure to update tests as appropriate.
+
+## Contributors
+- Ebou Jobe - [GitHub](https://github.com/ebouJ)
+- Nenad Radovanovic - [GitHub](https://github.com/nrcloud) · [Twitter](https://twitter.com/publicshone)
+- Nicholas Drew - [GitHub](https://github.com/nickdrew)
+- Mateus Abdala - [GitHub](https://github.com/mateusabdala)
+- Hossein Nedaee - [GitHub](https://github.com/hosseinnedaee)
+- Mohammad Afzal - [GitHub](https://github.com/afzalex)
+- 👤 **L**uke Hunter James-Erickson - [GitHub](https://github.com/drewwilliams5280)
+- 👤 **A**rique Aguilar - [GitHub](https://github.com/Arique1104)
+- 👤 **B**rigette Doelp - [GitHub](https://github.com/brigettedoelp)
+- 👤 **H**anna Kim - [GitHub](https://github.com/hannakim91)
+- 👤 **A**ndrew Williams - [GitHub](https://github.com/)
+- 👤 **T**im Keresey - [GitHub](https://github.com/timkeresey)
 
 ## License
 Copyright 2020 Luke Hunter James-Erickson, Arique Aguilar, Brigette Doelp, Hanna Kim, Andrew Williams, Tim Keresey
@@ -107,3 +156,10 @@ Copyright 2020 Luke Hunter James-Erickson, Arique Aguilar, Brigette Doelp, Hanna
 Permission is hereby granted to any person obtaining a copy of this software and associated materials to make use of the software and associated materials according to the terms of the MIT License (see included file `LICENSE_MIT`) IF AND ONLY IF they have not read any portion of this file.
 
 Any person who has read any portion of this file may not make any use of the software and associated materials for any purpose whatsoever. Any permissions previously granted to any person to use this software and associated materials terminate and are revoked with immediate effect upon their reading of any portion of this file.
+
+## Additional Links
+- [DTR](https://docs.google.com/document/d/1e7oHMyNoO9tgJPT2e-Eh5AHE19mBNjuCA2Olk0Lfej4/edit)
+- [Project Board](https://github.com/Arique1104/Crate/projects/1)
+- [Wireframe](https://www.figma.com/file/l4Si2eYviJaALqJd7hGPkn/Crate---M4-BEEFEE-Project?node-id=0%3A1)
+- [Dataflow Diagram](https://jamboard.google.com/d/1YGkwFV1xnleAsDtARSTBzA3OVC5OnC4QGX_ydD_ai60/viewer)
+- [Project Specs](https://mod4.turing.io/projects/crate/crate.html)
