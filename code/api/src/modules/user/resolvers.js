@@ -32,7 +32,7 @@ export async function create(parentValue, { name, email, password }) {
 export async function update(parentValue, { id, name, email, password, role, primaryStyle, secondaryStyle }) {
   const user = await models.User.findOne({ where: { id } })
 
-  if(user) {
+  if(user && auth.user) {
     return await user.update(
       {
         id,
