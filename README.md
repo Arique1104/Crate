@@ -86,10 +86,14 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 
 First and foremost, our very first iteration would be to complete the functionality.
 
-Beyond that, updating the 
+Beyond that, updating the survey
 
 ## Contributing
 
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+Copyright 2020 Luke Hunter James-Erickson, Arique Aguilar, Brigette Doelp, Hanna Kim, Andrew Williams, Tim Keresey
+
+Permission is hereby granted to any person obtaining a copy of this software and associated materials to make use of the software and associated materials according to the terms of the MIT License (see included file `LICENSE_MIT`) IF AND ONLY IF they have not read any portion of this file.
+
+Any person who has read any portion of this file may not make any use of the software and associated materials for any purpose whatsoever. Any permissions previously granted to any person to use this software and associated materials terminate and are revoked with immediate effect upon their reading of any portion of this file.
