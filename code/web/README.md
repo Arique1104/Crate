@@ -55,6 +55,23 @@ foobar.pluralize('word') # returns 'words'
 foobar.pluralize('goose') # returns 'geese'
 foobar.singularize('phenomena') # returns 'phenomenon'
 ```
+
+## Skills
+
+### Git workflow
+- Rebase
+- PR's and code review
+
+### AGILE project management
+- Daily standup's
+- Retros
+- Project board
+
+### Analyzing existing codebase
+- Diagram data flow
+- Code annotation
+- Wireframing
+
 ## Contributors
 - Ebou Jobe - [GitHub](https://github.com/ebouJ)
 - Nenad Radovanovic - [GitHub](https://github.com/nrcloud) · [Twitter](https://twitter.com/publicshone)
@@ -76,8 +93,6 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
 
 ## Additional Links
 - [DTR](https://docs.google.com/document/d/1e7oHMyNoO9tgJPT2e-Eh5AHE19mBNjuCA2Olk0Lfej4/edit)
