@@ -57,6 +57,7 @@ Our additions lay the groundwork to helping the user understand their personal s
     - `sequelize db:seed:all`
 
 ### Common errors
+
 When running `npm run setup` in the api directory:
 ```
 ERROR:root:code for hash md5 was not found.
