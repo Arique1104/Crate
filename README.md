@@ -78,6 +78,16 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 ## Usage
 
 
+## Technology Used
+
+## Wins and Challenges
+
+## Future Iterations
+
+First and foremost, our very first iteration would be to complete the functionality.
+
+Beyond that, updating the 
+
 ## Contributing
 
 
