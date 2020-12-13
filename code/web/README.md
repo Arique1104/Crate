@@ -13,7 +13,7 @@ Our additions lay the groundwork to helping the user understand their personal s
 - Hossein Nedaee - [GitHub](https://github.com/hosseinnedaee)
 - Mohammad Afzal - [GitHub](https://github.com/afzalex)
 - 👤 **L**uke Hunter James-Erickson - [GitHub](https://github.com/drewwilliams5280)
-- 👤 **A**rique - [GitHub](https://github.com/Arique1104)
+- 👤 **A**rique Aguilar - [GitHub](https://github.com/Arique1104)
 - 👤 **B**rigette Doelp - [GitHub](https://github.com/brigettedoelp)
 - 👤 **H**anna Kim - [GitHub](https://github.com/hannakim91)
 - 👤 **A**ndrew Williams - [GitHub](https://github.com/)
@@ -77,3 +77,9 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Additional Links
+- [DTR](https://docs.google.com/document/d/1e7oHMyNoO9tgJPT2e-Eh5AHE19mBNjuCA2Olk0Lfej4/edit)
+- [Project Board](https://github.com/Arique1104/Crate/projects/1)
+- [Wireframe](https://www.figma.com/file/l4Si2eYviJaALqJd7hGPkn/Crate---M4-BEEFEE-Project?node-id=0%3A1)
+- [Dataflow Diagram](https://jamboard.google.com/d/1YGkwFV1xnleAsDtARSTBzA3OVC5OnC4QGX_ydD_ai60/viewer)
