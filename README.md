@@ -96,6 +96,24 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 - Wireframing
 
 
+## Skills
+
+### Workflow
+- Git Rebase
+- PR's and code review
+- Test-driven development
+
+### AGILE project management
+- Daily standup's
+- Retros
+- Project board
+
+### Analyzing existing codebase
+- Diagram data flow
+- Code annotation
+- Wireframing
+
+
 ## Technologies
 
 ### Front-end
@@ -131,6 +149,25 @@ Beyond that, we would do these:
     - Update the User migration to require authorization.
     - Test the above.
     - Integrate the user's style with the crates to allow for more personalized products.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Contributors
+- Ebou Jobe - [GitHub](https://github.com/ebouJ)
+- Nenad Radovanovic - [GitHub](https://github.com/nrcloud) · [Twitter](https://twitter.com/publicshone)
+- Nicholas Drew - [GitHub](https://github.com/nickdrew)
+- Mateus Abdala - [GitHub](https://github.com/mateusabdala)
+- Hossein Nedaee - [GitHub](https://github.com/hosseinnedaee)
+- Mohammad Afzal - [GitHub](https://github.com/afzalex)
+- 👤 **L**uke Hunter James-Erickson - [GitHub](https://github.com/drewwilliams5280)
+- 👤 **A**rique Aguilar - [GitHub](https://github.com/Arique1104)
+- 👤 **B**rigette Doelp - [GitHub](https://github.com/brigettedoelp)
+- 👤 **H**anna Kim - [GitHub](https://github.com/hannakim91)
+- 👤 **A**ndrew Williams - [GitHub](https://github.com/)
+- 👤 **T**im Keresey - [GitHub](https://github.com/timkeresey)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
