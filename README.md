@@ -20,9 +20,9 @@ Our additions lay the groundwork to helping the user understand their personal s
     ```
   - Close or reload your terminal window
   - Type `which psql` in your terminal you should see the following output:
-  ```
-    /Applications/Postgres.app/Contents/Versions/latest/bin/psql
-  ```
+    ```
+      /Applications/Postgres.app/Contents/Versions/latest/bin/psql
+    ```
   - Type `psql` in your terminal to verify that your postgres CLI is working.
   - Clone repo `git clone git@github.com:atulmy/crate.git crate`
 
@@ -47,14 +47,17 @@ Our additions lay the groundwork to helping the user understand their personal s
 
 - Database installation
   - Install Sequelize by running these on the command line
-    - `npm install --save sequelize`
-    - `npm install --save pg pg-hstore`
+    - `npm i --save sequelize`
+    - `npm i --g sequelize-cli`
     - `yarn add sequelize`
+  - Create testing database:
+    - type `psql crates`
+    - type `CREATE DATABASE crate_testing;`
   - Run on the command line, white in the `/api` folder, the following code to setup the database:
-    - `sequelize init`
     - `sequelize db:create`
     - `sequelize db:migrate`
     - `sequelize db:seed:all`
+
 
 ### Common errors
 
@@ -75,7 +78,22 @@ Based on that version run: `brew switch openssl 1.0.2t` or `brew switch openssl 
 
 Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 
-## Usage
+## Skills
+
+### Workflow
+- Git Rebase
+- PR's and code review
+- Test-driven development
+
+### AGILE project management
+- Daily standup's
+- Retros
+- Project board
+
+### Analyzing existing codebase
+- Diagram data flow
+- Code annotation
+- Wireframing
 
 
 ## Skills
@@ -124,12 +142,32 @@ Beyond that, we would do these:
       - There is feedback denoting that an article of clothing had been selected.
       - Only one article of clothing is able to be selected in each clothing category.
       - The clothing options only log one click, and if another one is clicked, the results array reflects thing.
+      - It provides feedback as to what your survey results are.
+    - Sad path testing.
+    - Integration/Async Testing
   - Backend:
     - Update the User migration to require authorization.
-    - Test the above
+    - Test the above.
+    - Integrate the user's style with the crates to allow for more personalized products.
 
-## Learning Goals
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+Please make sure to update tests as appropriate.
+
+## Contributors
+- Ebou Jobe - [GitHub](https://github.com/ebouJ)
+- Nenad Radovanovic - [GitHub](https://github.com/nrcloud) · [Twitter](https://twitter.com/publicshone)
+- Nicholas Drew - [GitHub](https://github.com/nickdrew)
+- Mateus Abdala - [GitHub](https://github.com/mateusabdala)
+- Hossein Nedaee - [GitHub](https://github.com/hosseinnedaee)
+- Mohammad Afzal - [GitHub](https://github.com/afzalex)
+- 👤 **L**uke Hunter James-Erickson - [GitHub](https://github.com/drewwilliams5280)
+- 👤 **A**rique Aguilar - [GitHub](https://github.com/Arique1104)
+- 👤 **B**rigette Doelp - [GitHub](https://github.com/brigettedoelp)
+- 👤 **H**anna Kim - [GitHub](https://github.com/hannakim91)
+- 👤 **A**ndrew Williams - [GitHub](https://github.com/)
+- 👤 **T**im Keresey - [GitHub](https://github.com/timkeresey)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
