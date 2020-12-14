@@ -51,8 +51,8 @@ Our additions lay the groundwork to helping the user understand their personal s
     - `npm i --g sequelize-cli`
     - `yarn add sequelize`
   - Create testing database:
-    - type `psql crates`
-    - type `CREATE DATABASE crate_testing;`
+    - type on the command line `psql crates`
+    - type in psql `CREATE DATABASE crate_testing;`
   - Run on the command line, white in the `/api` folder, the following code to setup the database:
     - `sequelize db:create`
     - `sequelize db:migrate`
@@ -92,25 +92,7 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 
 ### Analyzing existing codebase
 - Diagram data flow
-- Code annotation
-- Wireframing
-
-
-## Skills
-
-### Workflow
-- Git Rebase
-- PR's and code review
-- Test-driven development
-
-### AGILE project management
-- Daily standup's
-- Retros
-- Project board
-
-### Analyzing existing codebase
-- Diagram data flow
-- Code annotation
+- Code annotation 
 - Wireframing
 
 
@@ -123,7 +105,7 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 - React/Redux
 - NPM
 
-###  Back-end
+### Back-end
 - Node.js
 - PSQL
 - GraphQL
