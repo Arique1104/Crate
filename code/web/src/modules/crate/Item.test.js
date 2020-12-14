@@ -9,6 +9,7 @@ import { createStore } from 'redux';
 import { store }from '../../setup/store.js';
 import configureStore from 'redux-mock-store';
 import Item from './Item.js';
+import StyleSurvey from '../survey/StyleSurvey';
 
 describe('Item', () => {
 
@@ -29,5 +30,24 @@ describe('Item', () => {
 
     expect(getByText('human clothes')).toBeInTheDocument();
   });
-  
+
+  it('should take the user to a style survey when they click subscribe', () => {
+    const dumCrate = {
+      id: 1,
+      name: 'human clothes',
+      description: 'these are clothes for humans'
+    }
+
+    const { getByText } = render (
+      <Provider store={store}>
+        <BrowserRouter>
+          <Item crate={dumCrate}/>
+        </BrowserRouter>
+      </Provider>
+    );
+
+    const btn = screen.getByText('Subscribe');
+    userEvent.click(btn);
+    expect(screen.getByText('Pick which styles suit your tastes!')).toBeInTheDocument();
+  });
 })
