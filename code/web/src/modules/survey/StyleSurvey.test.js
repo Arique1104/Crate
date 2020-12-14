@@ -22,6 +22,7 @@ describe('StyelSurvey', () => {
     );
 
     expect(getByText('Pick which styles suit your tastes!')).toBeInTheDocument();
+    expect(getByText('Submit')).toBeInTheDocument();
   });
 
   //should test that style button clickability
