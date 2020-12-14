@@ -152,6 +152,7 @@ Beyond that, we would do these:
     - Update the User migration to require authorization.
     - Test the above.
     - Integrate the user's style with the crates to allow for more personalized products.
+    - Create a joins table and many-to-many relationship between users and products to ensure a user doesn't receive the same product twice.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
