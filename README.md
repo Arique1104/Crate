@@ -132,7 +132,7 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 - Yarn
 
 ### Back-end Database Relationships
-![Crate Database Relationships](https://i.imgur.com/ZnM0ThG.png)
+![Crate Database Relationships](https://i.imgur.com/n7yrnxR.png)
 
 ## Wins and Challenges
 
