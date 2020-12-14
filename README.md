@@ -131,6 +131,9 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 - Sequelize
 - Yarn
 
+### Back-end Database Relationships
+![Crate Database Relationships](https://imgur.com/n7yrnxR)
+
 ## Wins and Challenges
 
 ## Future Iterations
