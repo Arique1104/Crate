@@ -92,7 +92,7 @@ Finally, run `python -c "import hashlib;m=hashlib.md5();print(m.hexdigest())"`
 
 ### Analyzing existing codebase
 - Diagram data flow
-- Code annotation
+- Code annotation 
 - Wireframing
 
 
